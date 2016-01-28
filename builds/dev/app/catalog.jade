@@ -1,0 +1,122 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Gllacy
+    link(rel="stylesheet" href="app.css" )
+  body
+    include includes/_header
+    main.main
+      div.container
+        nav.bread-crumbs
+          ul.bread-crumbs__list
+            li.bread-crumbs__item
+              a(href="#") Главная
+            li.bread-crumbs__item
+              a(href="#") Каталог
+            li.bread-crumbs__item.bread-crumbs__item--disabled
+              a(href="#") Сливочное
+        form.filter
+          div.filter__sort
+            h5.filter__title Сортировка:
+            select.filter__select
+              option по популярности
+              option по цене
+          div.filter__prise
+            h5.filter__title Цена:
+            input(type="range").filter__range 
+          div.filter__fat
+            h5.filter__title Жирность:
+            input(type="radio" id="fatmin").filter__radio
+            input(type="radio" id="fat10").filter__radio
+            input(type="radio" id="fat30").filter__radio 
+            input(type="radio" id="fatmax").filter__radio
+            label(for="fatmin")
+            label(for="fat10") 
+            label(for="fat30") 
+            label(for="fatmax")   
+          div.filter__toppings
+            h5.filter__title Наполнители:
+            input(type="checkbox" name="topping" id="chocolate").filter__checkbox
+            input(type="checkbox" name="topping" id="sugar").filter__checkbox
+            input(type="checkbox" name="topping" id="fruit").filter__checkbox 
+            input(type="checkbox" name="topping" id="syrups").filter__checkbox
+            input(type="checkbox" name="topping" id="jams").filter__checkbox
+            label(for="chocolate")
+            label(for="sugar") 
+            label(for="fruit") 
+            label(for="syrups")
+            label(for="jams")
+         input(type="submit" value="Применить").filter__btn
+          
+        div.promo
+            div.promo__item
+              div.promo__image
+              span.promo__price 310
+              a(href="#").promo__link Сливочное с апельсиновым джемом и цитрусовой стружкой
+            div.promo__item
+              div.promo__image
+              span.promo__price 380
+              a(href="#").promo__link Сливочно-кофейное с кусочками шоколада
+            div.promo__item
+              div.promo__image
+              span.promo__price 355
+              a(href="#").promo__link Сливочно-клубничное с присыпкой из белого шоколада
+            div.promo__item
+              div.promo__image
+              span.promo__price 415
+              a(href="#").promo__link Сливочное крем-брюле с карамельной подливкой
+              
+            div.promo__item
+              div.promo__image
+              span.promo__price 310
+              a(href="#").promo__link Сливочное с брусничным джемом
+            div.promo__item
+              div.promo__image
+              span.promo__price 380
+              a(href="#").promo__link Сливочно-черничное с цельными ягодами черники
+            div.promo__item
+              div.promo__image
+              span.promo__price 355
+              a(href="#").promo__link Сливочно-лимонное с карамельной присыпкой
+            div.promo__item
+              div.promo__image
+              span.promo__price 415
+              a(href="#").promo__link Сливочное с шоколадной стружкой
+              
+            div.promo__item
+              div.promo__image
+              span.promo__price 310
+              a(href="#").promo__link Сливочно-ванильное с кусочками шоколада
+            div.promo__item
+              div.promo__image
+              span.promo__price 380
+              a(href="#").promo__link Сливочноe с ментоловым сиропом
+            div.promo__item
+              div.promo__image
+              span.promo__price 355
+              a(href="#").promo__link Сливочное с кусочками черного шоколада
+            div.promo__item
+              div.promo__image
+              span.promo__price 415
+              a(href="#").promo__link Сливочное с мятным сиропом
+      
+        div.paginator
+          ul.paginator__list
+            li.paginator__item
+              a(href="#").paginator__prev
+            li.paginator__item
+              a(href="#") 1
+            li.paginator__item
+              a(href="#") 2
+            li.paginator__item
+             a(href="#") 3
+            li.paginator__item
+             a(href="#") 4
+            li.paginator__item
+             a(href="#") 5
+            li.paginator__item
+              a(href="#").paginator__next
+                
+       
+    include includes/_footer
