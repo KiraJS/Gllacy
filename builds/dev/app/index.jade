@@ -1,0 +1,86 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Gllacy
+    link(rel="stylesheet" href="app.css" )
+  body
+    include includes/_header
+    
+    main.main
+      div.container
+        div.slider
+          input(type="radio" id="btn-1" name="toggle" checked)
+          input(type="radio" id="btn-2" name="toggle" )
+          input(type="radio" id="btn-3" name="toggle")
+          div.slider__controls
+            label(for="btn-1")
+            label(for="btn-1")
+            label(for="btn-1")
+          
+         div.slider__iner
+           div.slider__item
+             h2.slider__title
+             a(href="#").slider__button
+           div.slider__item
+             h2.slider__title
+             a(href="#").slider__button
+           div.slider__item
+             h2.slider__title
+             a(href="#").slider__button
+               
+        div.sales
+          div.sales__item
+            h3.sales__title Малинка даром!
+            p.sales__text При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            a(href="#").sales__btn Хочу варенье!
+          div.sales__item
+            h3.sales__title Шоколадки даром!
+            p.sales__text При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+            a(href="#").sales__btn Хочу шоколадки!
+            
+        div.promo
+          div.promo__item
+            div.promo__image
+            span.promo__price 310
+            a(href="#").promo__link Сливочное с апельсиновым джемом и цитрусовой стружкой
+          div.promo__item
+            div.promo__image
+            span.promo__price 380
+            a(href="#").promo__link Сливочно-кофейное с кусочками шоколада
+          div.promo__item
+            div.promo__image
+            span.promo__price 355
+            a(href="#").promo__link Сливочно-клубничное с присыпкой из белого шоколада
+          div.promo__item
+            div.promo__image
+            span.promo__price 415
+            a(href="#").promo__link Сливочное крем-брюле с карамельной подливкой
+            
+        div.features
+          h4.features__title
+          p.features__text.features__text--technology Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          p.features__text.features__text--farm Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          p.features__text.features__text--ecology Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          p.features__text.features__text--thermopack Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+       
+        div.row
+          div.blog
+            span.blog__subtitle
+            a(href="#").blog__link
+          div.mail
+            form.mail__form
+              p.mail.text
+              input(type="mail").mail.input
+              input(type="submit").mail.btn
+      
+      div.map
+        div.contact
+            div.contact__item
+              p.contact__text contact__text--small Адрес главного офиса и офлайн магазина:
+              p.contact__text ул. Большая Конюшенная 19/8, Санкт-Петербург
+            div.contact__item
+              p.contact__text contact__text--small Для заказов по телефону:
+              a(href="tel:78124502525").contact__text 8 812 450-25-25
+              a(href="#").contact__btn Форма обратной связи        
+    include includes/_footer
