@@ -4,83 +4,102 @@ html
     meta(charset="utf-8")
     title Gllacy
     link(rel="stylesheet" href="app.css" )
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+    link(href="http://allfont.ru/allfont.css?fonts=roboto-black" rel="stylesheet" type="text/css")
   body
-    include includes/_header
-    
-    main.main
-      div.container
-        div.slider
-          input(type="radio" id="btn-1" name="toggle" checked)
-          input(type="radio" id="btn-2" name="toggle" )
-          input(type="radio" id="btn-3" name="toggle")
-          div.slider__controls
-            label(for="btn-1")
-            label(for="btn-1")
-            label(for="btn-1")
+    input(type="radio" id="btn-1" name="toggle" checked)
+    input(type="radio" id="btn-2" name="toggle")
+    input(type="radio" id="btn-3" name="toggle")
+    div(class="site-wrapper")
+      include includes/_header
+      main.main
+        div.container
+          div(class="slider")
+            div(class="slide" id="slide1")
+              div(class="slide-title") Крем-брюле и пломбир с малиновым джемом
+              a(class="slide-btn" href="#") Давайте оба!
+              
+            div(class="slide" id="slide2")
+              div(class="slide-title") Шоколадный пломбир и лимонный сорбет
+              a(class="slide-btn" href="#") Давайте оба!
+                
+            div(class="slide" id="slide3")
+              div(class="slide-title") Пломбир с помадкой и клубничный щербет
+              a(class="slide-btn" href="#") Давайте оба!
+            
+            div(class="slider-controls")
+              label(for="btn-1")
+              label(for="btn-2")
+              label(for="btn-3")
           
-         div.slider__iner
-           div.slider__item
-             h2.slider__title
-             a(href="#").slider__button
-           div.slider__item
-             h2.slider__title
-             a(href="#").slider__button
-           div.slider__item
-             h2.slider__title
-             a(href="#").slider__button
-               
-        div.sales
-          div.sales__item
-            h3.sales__title Малинка даром!
-            p.sales__text При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-            a(href="#").sales__btn Хочу варенье!
-          div.sales__item
-            h3.sales__title Шоколадки даром!
-            p.sales__text При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-            a(href="#").sales__btn Хочу шоколадки!
-            
-        div.promo
-          div.promo__item
-            div.promo__image
-            span.promo__price 310
-            a(href="#").promo__link Сливочное с апельсиновым джемом и цитрусовой стружкой
-          div.promo__item
-            div.promo__image
-            span.promo__price 380
-            a(href="#").promo__link Сливочно-кофейное с кусочками шоколада
-          div.promo__item
-            div.promo__image
-            span.promo__price 355
-            a(href="#").promo__link Сливочно-клубничное с присыпкой из белого шоколада
-          div.promo__item
-            div.promo__image
-            span.promo__price 415
-            a(href="#").promo__link Сливочное крем-брюле с карамельной подливкой
-            
-        div.features
-          h4.features__title
-          p.features__text.features__text--technology Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-          p.features__text.features__text--farm Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-          p.features__text.features__text--ecology Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          p.features__text.features__text--thermopack Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
-       
-        div.row
-          div.blog
-            span.blog__subtitle
-            a(href="#").blog__link
-          div.mail
-            form.mail__form
-              p.mail.text
-              input(type="mail").mail.input
-              input(type="submit").mail.btn
-      
-      div.map
-        div.contact
-            div.contact__item
-              p.contact__text contact__text--small Адрес главного офиса и офлайн магазина:
-              p.contact__text ул. Большая Конюшенная 19/8, Санкт-Петербург
-            div.contact__item
-              p.contact__text contact__text--small Для заказов по телефону:
-              a(href="tel:78124502525").contact__text 8 812 450-25-25
-              a(href="#").contact__btn Форма обратной связи        
-    include includes/_footer
+                      
+          div.sales.row
+            div.sales__item.sales__item--berry.column
+              h3.sales__title Малинка даром!
+              p.sales__text При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+              a(href="#").sales__btn Хочу варенье!
+            div.sales__item.sales__item--cocoa.column.to-right
+              h3.sales__title Шоколадки даром!
+              p.sales__text При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+              a(href="#").sales__btn Хочу шоколадки!
+              
+          div.promo.row 
+            div.promo__item.column
+              img.promo__image(src="app/img/ice_orange.png" width="100%" height="100%")
+              div.promo__price-wrap
+                span.promo__price 310
+                  span.promo__price--sm /кг
+              a(href="#").promo__link Сливочное с апельсиновым джемом и цитрусовой стружкой
+            div.promo__item.column
+              img.promo__image(src="app/img/ice_chocolate.png" width="100%" height="100%")
+              div.promo__price-wrap
+                span.promo__price 380
+                  span.promo__price--sm /кг
+              a(href="#").promo__link Сливочно-кофейное с кусочками шоколада
+            div.promo__item.column
+              img.promo__image(src="app/img/ice_strawberry.png" width="100%" height="100%")
+              div.promo__price-wrap
+                span.promo__price 355
+                  span.promo__price--sm /кг
+              a(href="#").promo__link Сливочно-клубничное с присыпкой из белого шоколада
+            div.promo__item.column
+              img.promo__image(src="app/img/ice_caramel.png" width="100%" height="100%")
+              div.promo__price-wrap
+                span.promo__price 415
+                  span.promo__price--sm /кг
+              a(href="#").promo__link Сливочное крем-брюле с карамельной подливкой
+              
+          div.features.row
+            h4.features__title.column Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+            div.row.features__wrapper.row
+              p.features__text.column.features__text--technology   Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              p.features__text.column.features__text--farm Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            div.row.features__wrapper.row
+              p.features__text.column.features__text--ecology Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+              p.features__text.column.features__text--thermopack  Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+         
+          div.row
+            div.blog.column
+              span.blog__subtitle Новое в нашем блоге
+              a(href="#").blog__link 10  способов сервировки фруктовых щербетов к&nbsp;столу
+
+            div.mail.column
+              form.mail__form
+                p.mail__text Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+                input(type="mail").mail__input
+                input(type="submit" value="Отправить").mail__btn
+        
+        div.map
+          div.contact
+              div.contact__item
+                p.contact__text.contact__text--small Адрес главного офиса и офлайн магазина:
+                p.contact__text ул. Большая Конюшенная 19/8, Санкт-Петербург
+              div.contact__item
+                p.contact__text.contact__text--small Для заказов по телефону:
+                a(href="tel:78124502525").contact__text.contact__link 8 812 450-25-25
+                p.contact__text.contact__text--small (ежедневно)
+                a(href="#").contact__btn Форма обратной связи 
+      include includes/_footer
+      script(src="app.js")
+
+  

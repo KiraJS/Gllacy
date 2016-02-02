@@ -1,18 +1,20 @@
 header.header
   div.container
-    nav.navigation
-      ul.navigation__list
-        li.navigation__item.logo
-          a(href="#")
-        li.navigation__item
-          a(href="#") Каталог
-        li.navigation__item
-          a(href="#") Доставка и оплата
-        li.navigation__item
-          a(href="#") О Компании
-      div.search
-        input(type="search").search__input
-      div.user
-        a(href="user__enter") Вход
-        a(href="user__cart") Корзина
-        
+    div.row
+      div.navigation.column
+        img(src="app/img/gllacy-logo.svg").logo
+        nav
+          ul.navigation__list.row--inline
+            li.navigation__item.column
+              a(href="#") Каталог
+            li.navigation__item.column
+              a(href="#") Доставка и оплата
+            li.navigation__item.column
+              a(href="#") О Компании    
+      div.user.column.row--inline
+        a(href="#").user__search.column
+        a(href="#").user__enter.column Вход
+        a(href="#").user__cart.column Пусто 
+    
+          
+  
