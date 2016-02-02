@@ -1,0 +1,19 @@
+.about {
+  padding-top: 35px;
+  width: 560px;
+  margin-right: 26px;
+  padding-bottom: 25px;
+}
+.about__link {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  width: 270px;
+  padding-left: 130px;
+  &:last-child {
+    padding-left: 0;
+  }
+  &--like{
+    background: url("app/img/icon_heart.svg") no-repeat  43% 28% ;
+  }
+}

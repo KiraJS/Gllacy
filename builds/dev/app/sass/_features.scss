@@ -1,0 +1,47 @@
+.features {
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-image: url("app/img/waffle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 263px;
+}
+.features__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #323232;
+}
+.features__text {
+  width: 538px;
+  padding-left: 55px;
+  padding-top: 20px;
+  color: #323232;
+  margin-right: 30px;
+  margin-bottom: 5px;
+  &:last-child{
+    margin-right: 0;
+  }
+  &--farm{
+    background: url("app/img/icon_cow.svg") no-repeat 0% 20%;
+  }
+  &--technology{
+    background: url("app/img/icon_ice.svg") no-repeat 0% 20%;
+  }
+  &--ecology{
+    background: url("app/img/icon_leaf.svg") no-repeat 0% 20%;
+  }
+  &--thermopack{
+    background: url("app/img/icon_therm.svg") no-repeat 0% 20%;
+  }
+}
+.features__wrapper{
+  width: 1110px;
+  min-height: 65px;
+
+  margin-right: 10px;
+&:last-child {
+  margin-right: 0;
+  }
+}

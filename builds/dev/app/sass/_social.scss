@@ -1,0 +1,27 @@
+.social {
+  padding-top: 35px;
+  width: 267px;
+  margin-right: 26px;
+  padding-bottom: 25px;
+
+}
+.social__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  border: 4px solid #c2cec7;
+  border-radius: 50%;
+  &--vk{
+    background: url("app/img/icon_vk.svg") no-repeat center ;
+  }
+  &--fb{
+    background: url("app/img/icon_facebook.svg") no-repeat center ;
+  }
+  &--inst{
+    background: url("app/img/icon_insta.svg") no-repeat center ;
+  }
+  &--tw{
+    background: url("app/img/icon_twitter.svg") no-repeat center ;
+  }
+}

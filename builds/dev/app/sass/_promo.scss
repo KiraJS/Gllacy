@@ -1,0 +1,48 @@
+.promo {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.promo__item {
+  width: 267px;
+  margin-right: 26px;
+  position: relative;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+.promo__link {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.promo__price {
+  font-size: 45px;
+  font-weight: bold;
+  position: relative;;
+  &--sm {
+    font-size: 30px;
+    padding-left: 33px;
+  }
+  &:after{
+    position: absolute;
+    top: 14px;
+    left: 80px;
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 35px;
+    background-image:url("app/img/RUR.svg");
+  }
+}
+.promo__link {
+  display: block;
+  text-align: center;
+}
+.promo__price-wrap {
+  position: absolute;
+  top: 198px;
+  left: 0;
+}
+.promo__image{
+  margin-bottom: 8px;
+}

@@ -1,0 +1,9 @@
+/* модульная сетка */
+.container {margin: auto; width: 1200px; padding: 0 27px; box-sizing: border-box;}
+.row:after {content: ""; display: table; width: 100%;}
+.column {float: left; box-sizing: border-box; }
+.row--inline {font-size: 0;}
+.row--inline:after {display: none;}
+.row--inline .column {float:none; display: inline-block; vertical-align: top;}
+.to-right {float:right;}
+.single-column {margin:0 auto; float: none;}

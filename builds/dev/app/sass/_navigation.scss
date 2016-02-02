@@ -1,0 +1,29 @@
+.navigation {
+  position: relative;
+  width: 853px;
+  margin-right: 26px;
+}
+.navigation__list{
+  margin: 0;
+  padding-top: 20px;
+  position: relative;
+  padding-left: 165px;
+}
+.navigation__item {
+  list-style: none;
+  min-width: 20px;
+  padding: 0 13px;
+    &:last-child {
+    }
+}
+.navigation__item a{
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: -5px;
+}

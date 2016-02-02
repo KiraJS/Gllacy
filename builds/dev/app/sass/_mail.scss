@@ -1,0 +1,61 @@
+.mail {
+  position: relative;
+  width: 560px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("app/img/mail_bg.png");
+  min-height: 220px;
+}
+.mail__text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #323232;
+  margin-bottom: 40px;
+}
+.mail__btn {
+  position: absolute;
+  padding-left: 5px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  top: 138px;
+  right: 26px;
+  font-size: 18px;
+  margin: auto;
+  padding: 12px 17px 11px 17px;
+  border: none;
+  outline: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+.mail__btn:hover {
+  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.mail__btn:active {
+  background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.mail__input {
+  width: 363px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 2px #d3d3d2;
+}
+.mail__form {
+  border-radius: 20px;
+  height: 200px;
+  padding: 34px 27px;
+  box-sizing: border-box;
+}
